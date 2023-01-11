@@ -16,7 +16,9 @@ function Expenses(props) {
   });
 
   // Message when no expenses are found under selectect year
-  let expenseContent = <p>No Expenses Found</p>;
+  let expenseContent = (
+    <h2 className="expenses-list__fallback">No Expenses Found</h2>
+  );
   // If expenses are found under selected year then it will filter those results & render
   if (filteredExpenses.length > 0) {
     expenseContent = filteredExpenses.map(createExpenseItem);
