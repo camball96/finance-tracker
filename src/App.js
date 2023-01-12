@@ -28,6 +28,30 @@ const DUMMY_EXPENSES = [
     amount: 450,
     date: new Date(2021, 5, 12),
   },
+  {
+    id: "e5",
+    title: "New Chair (Wooden)",
+    amount: 410,
+    date: new Date(2022, 3, 12),
+  },
+  {
+    id: "e6",
+    title: "Food",
+    amount: 80,
+    date: new Date(2022, 1, 18),
+  },
+  {
+    id: "e7",
+    title: "Camera",
+    amount: 950,
+    date: new Date(2022, 10, 12),
+  },
+  {
+    id: "e8",
+    title: "Mattress",
+    amount: 450,
+    date: new Date(2023, 1, 5),
+  },
 ];
 
 function App() {

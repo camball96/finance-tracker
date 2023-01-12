@@ -3,9 +3,10 @@ import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
 import Card from "../ui/Card";
 import ExpensesFilter from "./ExpensesFilter";
+import ExpensesChart from "./ExpensesChart";
 
 function Expenses(props) {
-  const [year, setYear] = useState("");
+  const [year, setYear] = useState("2022");
 
   const saveExpenseFilter = (enteredExpenseYear) => {
     setYear(enteredExpenseYear);
@@ -38,6 +39,7 @@ function Expenses(props) {
   return (
     <Card className="expenses">
       <ExpensesFilter chosen={year} chosenYear={saveExpenseFilter} />
+      <ExpensesChart expenses={filteredExpenses} />
       {expenseContent}
     </Card>
   );
